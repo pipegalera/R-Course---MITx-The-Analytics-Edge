@@ -4,10 +4,12 @@ What is analytics? Analytics is the science of using data to build models that l
 
 # Unit 1. Introduction to R
 
+```
 - vector[3] -> Gives the element "3" of the vector.
 - seq(0,100,2) -> Gives a sequence from 0 to 100 with jumps of 2 units.
 - data.frame(vector_1, vector_2) -> Gives the combination of vector_1 and vector_2, for numerical and non-numerical elements.
-- CountryData"<img src="/tex/bdc5ed60461badbbe8b84453f84334b4.svg?invert_in_darkmode&sanitize=true" align=middle width=783.1687693499999pt height=126.57534120000001pt/>variable_name) -> finds the index of the variable "name"
+- CountryData<img src="/tex/3a5e2b96731cb7dd030b25eab7314ff8.svg?invert_in_darkmode&sanitize=true" align=middle width=774.94956pt height=126.57534120000001pt/>variable_name) -> finds the index of the variable "name"
+````
 
 # Unit 2. Linear Regression
 
@@ -37,7 +39,7 @@ The SEE's units of measurement are hard to interpret: if you use twice the amoun
 
 Goes from 0, or "no improvement over baseline", to 1, or "perfect predictive model". In other words, it tells us the accuracy on the training model, but *not* how well the model perform on new data (test data). In can be a "perfect predictive model" for the data that you already have and no predictive power over new data (*overfitting*)
 
-- Not all available variables should be used in the analysis. Each new variable requires mode data, and might cause overfitting: high <p align="center"><img src="/tex/5980c17499e2d5158c596bcd63f3169f.svg?invert_in_darkmode&sanitize=true" align=middle width=19.1610177pt height=14.202794099999998pt/></p> on the training data to create a model but bad performance on test data.
+- Not all available variables should be used in the analysis. Each new variable requires mode data, and might cause overfitting: high <img src="/tex/ee9dc84d168b211ff9f4b354e295af3c.svg?invert_in_darkmode&sanitize=true" align=middle width=19.161017699999988pt height=26.76175259999998pt/> on the training data to create a model but bad performance on test data.
 
 - T-value: measures the size of the difference relative to the variation in your sample data. The larger the absolute value of the t-value, the more likely the estimate is significant.
 
