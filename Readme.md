@@ -7,13 +7,13 @@ What is analytics? Analytics is the science of using data to build models that l
 - vector[3] -> Gives the element "3" of the vector.
 - seq(0,100,2) -> Gives a sequence from 0 to 100 with jumps of 2 units.
 - data.frame(vector_1, vector_2) -> Gives the combination of vector_1 and vector_2, for numerical and non-numerical elements.
-- CountryData<img src="/tex/3a5e2b96731cb7dd030b25eab7314ff8.svg?invert_in_darkmode&sanitize=true" align=middle width=774.94956pt height=126.57534120000001pt/>variable_name) -> finds the index of the variable "name"
+- CountryData"<img src="/tex/bdc5ed60461badbbe8b84453f84334b4.svg?invert_in_darkmode&sanitize=true" align=middle width=783.1687693499999pt height=126.57534120000001pt/>variable_name) -> finds the index of the variable "name"
 
 # Unit 2. Linear Regression
 
-<p align="center"><img src="/tex/debf5f197074794473eef12e3e9762e4.svg?invert_in_darkmode&sanitize=true" align=middle width=126.0090249pt height=27.969861149999996pt/></p>
+<p align="center"><img src="/tex/61262a329566e304947932d2a82cd5b5.svg?invert_in_darkmode&sanitize=true" align=middle width=141.2716173pt height=17.597769749999998pt/></p>
 
-Where <p align="center"><img src="/tex/cc0f75d03d8ca6982620224b6b81061a.svg?invert_in_darkmode&sanitize=true" align=middle width=12.73975725pt height=24.1620489pt/></p> is the intercept coefficient, <p align="center"><img src="/tex/da45a121271d62f5c9c9007cc230ea5d.svg?invert_in_darkmode&sanitize=true" align=middle width=12.73975725pt height=24.1620489pt/></p> is the regression coefficient and <p align="center"><img src="/tex/21d236a279f3526016d612501034819a.svg?invert_in_darkmode&sanitize=true" align=middle width=6.672392099999999pt height=7.0776222pt/></p> is the error term.
+Where <img src="/tex/3bde0199092dbb636a2853735fb72a69.svg?invert_in_darkmode&sanitize=true" align=middle width=15.85051049999999pt height=22.831056599999986pt/> is the intercept coefficient, <img src="/tex/15ef3b23ef739e47090fa0825bf9d390.svg?invert_in_darkmode&sanitize=true" align=middle width=15.85051049999999pt height=22.831056599999986pt/> is the regression coefficient and <img src="/tex/7ccca27b5ccc533a2dd72dc6fa28ed84.svg?invert_in_darkmode&sanitize=true" align=middle width=6.672392099999992pt height=14.15524440000002pt/> is the error term.
 
 - SST: Sum of Squares Total. Is the squared differences between the observed dependent variable and its mean:
 
