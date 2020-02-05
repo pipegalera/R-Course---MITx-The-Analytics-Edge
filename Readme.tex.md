@@ -7,7 +7,7 @@ What is analytics? Analytics is the science of using data to build models that l
 - vector[3] -> Gives the element "3" of the vector.
 - seq(0,100,2) -> Gives a sequence from 0 to 100 with jumps of 2 units.
 - data.frame(vector_1, vector_2) -> Gives the combination of vector_1 and vector_2, for numerical and non-numerical elements.
-- CountryData$Population -> adds the column "Population" to the dataset "CountryData"
+- CountryData"$"Population -> adds the column "Population" to the dataset "CountryData"
 - rbind() -> joint datasets
 - getwd() -> gets the directory you are working on
 - subset(dataset, variable == "the one you want") -> creates a subset of the dataframe with the vaiable that you select. It works also with a condition instead.
@@ -18,10 +18,10 @@ What is analytics? Analytics is the science of using data to build models that l
 # Unit 2. Linear Regression
 
 \begin{align*}
-  y^i=\b_0 + \b_1X^i+\epsilon^i
+  y^i=\beta_0 + \beta_1X^i+\epsilon^i
 \end{align*}
 
-Where $$\b_0$$ is the intercept coefficient, $$\b_1$$ is the regression coefficient and $$\epsilon$$ is the error term.
+Where $\beta_0$ is the intercept coefficient, $\beta_1$ is the regression coefficient and $\epsilon$ is the error term.
 
 - SST: Sum of Squares Total. Is the squared differences between the observed dependent variable and its mean:
 
