@@ -4,16 +4,18 @@ What is analytics? Analytics is the science of using data to build models that l
 
 # Unit 1. Introduction to R
 
+```
 - vector[3] -> Gives the element "3" of the vector.
 - seq(0,100,2) -> Gives a sequence from 0 to 100 with jumps of 2 units.
 - data.frame(vector_1, vector_2) -> Gives the combination of vector_1 and vector_2, for numerical and non-numerical elements.
-- CountryData"$"Population -> adds the column "Population" to the dataset "CountryData"
+- CountryData$Population -> adds the column "Population" to the dataset "CountryData"
 - rbind() -> joint datasets
 - getwd() -> gets the directory you are working on
 - subset(dataset, variable == "the one you want") -> creates a subset of the dataframe with the vaiable that you select. It works also with a condition instead.
 - write.csv(dataset, "el nombre.csv")
 - names() -> gives the names of the variables
 - match("name", dataset$variable_name) -> finds the index of the variable "name"
+````
 
 # Unit 2. Linear Regression
 
@@ -53,7 +55,7 @@ The SEE's units of measurement are hard to interpret: if you use twice the amoun
 
 Goes from 0, or "no improvement over baseline", to 1, or "perfect predictive model". In other words, it tells us the accuracy on the training model, but *not* how well the model perform on new data (test data). In can be a "perfect predictive model" for the data that you already have and no predictive power over new data (*overfitting*)
 
-- Not all available variables should be used in the analysis. Each new variable requires mode data, and might cause overfitting: high $$R^2$$ on the training data to create a model but bad performance on test data.
+- Not all available variables should be used in the analysis. Each new variable requires mode data, and might cause overfitting: high $R^2$ on the training data to create a model but bad performance on test data.
 
 - T-value: measures the size of the difference relative to the variation in your sample data. The larger the absolute value of the t-value, the more likely the estimate is significant.
 
