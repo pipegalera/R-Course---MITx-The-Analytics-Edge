@@ -42,13 +42,13 @@ The SEE's units of measurement are hard to interpret: if you use twice the amoun
 - RMSE: Root mean squared error. Its the sum of squared errors normalized by the number of observations (N).
 
 \begin{align*}
-  RMSE= \sqrt{\fraq{SSE}{N}}
+  RMSE= \sqrt{\frac{SSE}{N}}
 \end{align*}
 
-- $$R^2$$: R-squared captures the value added of the model. It represents the proportion of the variance for a dependent variable that is explained by the independent variables of the regression.
+- $R^2$: R-squared captures the value added of the model. It represents the proportion of the variance for a dependent variable that is explained by the independent variables of the regression.
 
 \begin{align*}
-  R^2= 1-\fraq{SSE}{SST}
+  R^2= 1-\frac{SSE}{SST}
 \end{align*}
 
 Goes from 0, or "no improvement over baseline", to 1, or "perfect predictive model". In other words, it tells us the accuracy on the training model, but *not* how well the model perform on new data (test data). In can be a "perfect predictive model" for the data that you already have and no predictive power over new data (*overfitting*)
@@ -58,10 +58,10 @@ Goes from 0, or "no improvement over baseline", to 1, or "perfect predictive mod
 - T-value: measures the size of the difference relative to the variation in your sample data. The larger the absolute value of the t-value, the more likely the estimate is significant.
 
 \begin{align*}
-  t = \fraq{\hat{x}-\mu}{s/\sqrt{n}}
+  t = \frac{\hat{x}-\mu}{s/\sqrt{n}}
 \end{align*}
 
-Where $$\hat{x}$$ is the training mean, $$\mu_i$$ is the hypothesized test mean, $$s$$ is the standard deviation error and $$n$$ the sample size. You can think of the T-value as the estimator over the standard error normalized.
+Where $\hat{x}$ is the training mean, $\mu_i$ is the hypothesized test mean, $s$ is the standard deviation error and $n$ the sample size. You can think of the T-value as the estimator over the standard error normalized.
 
 - Correlation: measures the linear relationship between variables. One of the main problem of linear regression is *multicollinearity*, which means that two of the independent variables used in the model are highly correlated.
 
@@ -71,10 +71,6 @@ Where $$\hat{x}$$ is the training mean, $$\mu_i$$ is the hypothesized test mean,
   AIC = 2k - 2ln(\hat{L})
 \end{align*}
 
-Where k is the number of parameters (dependent variables) and $$\hat{L}$$ the maximum value of the likelihood function for the model. You have one AIC value for each model, the more AIC value the better. The penalty discourages overfitting, because increasing the number of parameters in the model almost always improves the goodness of the fit.
+Where $k$ is the number of parameters (dependent variables) and $\hat{L}$ the maximum value of the likelihood function for the model. You have one AIC value for each model, the more AIC value the better. The penalty discourages overfitting, because increasing the number of parameters in the model almost always improves the goodness of the fit.
 
 - The use of logarithms in the dependent variable prevents that an unusual small number of observations affect disproportionally the SEE or RMSE. For example, you have a regression that explains really well 99% of your data points but the SEE is high not because the model is badly specificated but because you have an 1% of extreme observations that higher up the SEE.
-
-<p align="center">
-<img src="x.png" width="40%" height="40%">
-</p>
